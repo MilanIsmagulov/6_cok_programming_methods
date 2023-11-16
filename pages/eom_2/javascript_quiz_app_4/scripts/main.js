@@ -3,7 +3,7 @@ let testAnswers = document.querySelector('#answers_buttons1');
 
 let Dalee = document.querySelector('#check_button_3')
 
-
+let numDescTxt = document.querySelector('.number_description')
 
 
 
@@ -20,6 +20,8 @@ let questions = [
 let answerLength = questions[0].answers;
 let numberOfQuestion = 4; 
 let numberOfQuestionSum = 10;
+
+numDescTxt.innerHTML = `<b>${numberOfQuestion}/${numberOfQuestionSum}</b>`
 
 let stepMarkerPlace = document.querySelector('.step_marker');
 console.log("stepMarkerPlace")
