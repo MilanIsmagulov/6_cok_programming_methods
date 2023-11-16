@@ -421,10 +421,6 @@
     .step_marker_and_buttons{
         display: flex;
     }
-
-    .theory_eom{
-        height: 400px;
-    }
     .content{
         margin-right: 0;
     }

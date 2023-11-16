@@ -272,6 +272,7 @@ input:disabled {
         display: flex;
         align-items: center;
         padding-bottom: 25px !important;
+        margin-bottom: 25px !important;
         flex-direction: column;
     }
 
