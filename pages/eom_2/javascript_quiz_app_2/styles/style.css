@@ -35,6 +35,10 @@ body{
     background-color: black;
 }
 
+.links_black_header{
+    min-width: 165px;
+}
+
 .black_header a{
     color: white;
     padding: 15px;
@@ -43,7 +47,7 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
+
     transition: all 0.3s;
 }
 
@@ -260,22 +264,21 @@ input:disabled {
 }
 
 @media (max-width: 820px) {
-    .black_header{
-        height: 150px;
-    }
-
     .black_header h1{
         width: 70%;
     }
 
     .step_marker_and_buttons{
         display: flex;
-        width: 93vw;
+        align-items: center;
+        padding-bottom: 25px !important;
+        flex-direction: column;
     }
 
-    .theory_eom{
-        height: 600px;
+    .step_marker{
+        margin-bottom: 25px !important;
     }
+
     .content{
         margin-right: 0;
     }
@@ -285,8 +288,4 @@ input:disabled {
     .second{
         flex-direction: column;
     }
-}
-
-@media (max-width: 1180px) {
-
 }

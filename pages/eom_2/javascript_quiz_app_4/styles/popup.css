@@ -1,13 +1,25 @@
 .popup_text{
-    height: 700px;
+    height: 85% !important;
     width: 100%;
     overflow-y: auto;
     scroll-snap-align: start;
     padding: 15px;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
     flex-direction: column;
     padding: 10px;
+}
+
+
+.popup_content {
+    background-color: white;
+    color: black;
+    min-width: 300px !important;
+    min-height: 300px !important;
+    width: clamp(300px,80vw,1800px) !important;
+    height: clamp(300px,70vh,1000px) !important;
+    border-radius: 25px;
+    padding: 25px;
 }
 
 .popup_content_header{
@@ -199,10 +211,6 @@
 
 .theory_eom{
     flex-direction: column;
-    height: 540px;
-    overflow-y: auto;
-    margin-right: 25px;
-    
 }
 
 .image_part{
@@ -302,7 +310,7 @@
     width: 95%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 @media (max-width: 1180px) {
@@ -310,6 +318,101 @@
         height: 120px;
     }
 
+    body{
+        width: 100%;
+
+    }
+
+    .answers_btn form {
+        width: 700px;
+        
+    }
+    .answers_btn form div {
+        width: 700px;
+
+    }
+    .choices_div2{
+        width: 700px;
+    }
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 50px;
+    }
+
+    .answers_btn form div {
+        margin: 5px;
+    }
+
+    .main_buttons button {
+        width: 130px;
+    }
+    .questions{
+        margin: 15px;
+    }
+    .questions p{
+        padding:  10px;
+    }
+    .answers_btn form {
+        margin-bottom: 20px;
+    }
+
+    .black_header{
+        height: 150px;
+    }
+
+    .black_header h1{
+        width: 70%;
+    }
+
+    .step_marker_and_buttons{
+        display: flex;
+    }
+
+    .content{
+        margin-right: 0;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .second{
+        flex-direction: column;
+    }
+
+    body{
+        width: 100%;
+
+    }
+
+    .answers_btn form div {
+        width: 700px;
+    }
+    .choices_div2{
+        width: 700px;
+    }
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 0px;
+    }
+
+    .step_marker_and_buttons {
+        width: 95vw;
+        padding-bottom: 50px;
+        
+    }
+
+    .main_buttons button {
+        width: 130px;
+    }
 
     .black_header h1{
         width: 50%;

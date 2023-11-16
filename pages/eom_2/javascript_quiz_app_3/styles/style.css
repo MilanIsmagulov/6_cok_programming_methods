@@ -30,7 +30,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
 }
@@ -43,14 +42,22 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
+}
+
+.black_header h1{
+    font-size: clamp(25px,2vw,35px);
 }
 
 .black_header a:hover{
     transition: all 0.3s;
     background-color: white;
     color: black;
+}
+
+
+.links_black_header {
+    min-width: 165px;
 }
 
 .content{
@@ -191,20 +198,46 @@ input:disabled {
     background: rgb(255, 144, 144);
 }
 
+
+.theory_eom{
+    display: flex;
+    align-items: center;
+}
+
+.main_image{
+    position: relative;
+
+    margin: 20px;
+
+}
+
+.theory_eom p{
+    color: #000;
+    font-weight: 500;
+}
+
+
 @media (max-width: 1180px) {
-    body{
+    .leftimage{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .leftimage.text{
         width: 100%;
-
+        margin-left: 0;
     }
 
-    .answers_btn form {
-        width: 700px;
-        
+    .quiz_window p{
+        font-size: clamp(25px,2vw,30px);
     }
-    .answers_btn form div {
-        width: 700px;
 
+    .leftimage img{
+        margin: 0 !important;
+        width: 65%;
     }
+
     .choices_div2{
         width: 700px;
     }
@@ -224,6 +257,33 @@ input:disabled {
         
     }
 
+    .black_header h1{
+        width: 50%;
+    }
+
+    .step_marker_and_buttons{
+        display: flex;
+    }
+
+    .content{
+        margin-right: 0;
+    }
+    .popup_text img{
+
+        height: 100%;
+    }
+    .popup_body{
+        height: 50vh;
+    }
+    .popup_content {
+        height: 50vh;
+    }
+    .popup_text{
+        display: flex;
+        align-items: center;
+        height: 500px;
+    }
+
     .answers_btn form div {
         margin: 5px;
     }
@@ -240,29 +300,37 @@ input:disabled {
     .answers_btn form {
         margin-bottom: 20px;
     }
+
+    .answers_btn form div {
+        width: 700px;
+    }
+    .choices_div2{
+        width: 700px;
+    }
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 0px;
+    }
+
+    .step_marker_and_buttons {
+        width: 95vw;
+        padding-bottom: 50px;
+        
+    }
+
+    .main_buttons button {
+        width: 130px;
+    }
 }
 
-.theory_eom{
-    display: flex;
-    align-items: center;
-}
 
-.main_image{
-    position: relative;
-
-    margin: 20px;
-
-}
-
-.theory_eom p{
-    color: #000;
-    font-weight: 500;
-}
 
 @media (max-width: 820px) {
-    .black_header{
-        height: 150px;
-    }
 
     .black_header h1{
         width: 70%;
@@ -273,9 +341,6 @@ input:disabled {
         width: 93vw;
     }
 
-    .theory_eom{
-        height: 600px;
-    }
     .content{
         margin-right: 0;
     }
@@ -285,8 +350,4 @@ input:disabled {
     .second{
         flex-direction: column;
     }
-}
-
-@media (max-width: 1180px) {
-
 }

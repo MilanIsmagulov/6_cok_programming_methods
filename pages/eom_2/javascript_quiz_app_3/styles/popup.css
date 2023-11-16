@@ -1,14 +1,25 @@
 .popup_text{
-    height: 700px;
+    height: 85% !important;
     width: 100%;
     overflow-y: auto;
     scroll-snap-align: start;
     padding: 15px;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
     flex-direction: column;
     padding: 10px;
 }
+
+
+.popup_content {
+    background-color: white;
+    color: black;
+    width: clamp(300px,80vw,1800px) !important;
+    height: clamp(300px,60vh,1000px) !important;
+    border-radius: 25px;
+    padding: 25px;
+}
+
 
 .popup_content_header{
     color: #ff7175;
@@ -114,16 +125,6 @@
     padding: 30px 20px;
 }
 
-.popup_content {
-    background-color: white;
-    color: black;
-    min-width: 700px;
-    max-width: 1700px;
-    min-height: 80vh;
-    border-radius: 25px;
-    padding: 25px;
-}
-
 .popup_header {
     display: flex;
     align-items: center;
@@ -199,10 +200,6 @@
 
 .theory_eom{
     flex-direction: column;
-    height: 540px;
-    overflow-y: auto;
-    margin-right: 25px;
-    
 }
 
 .image_part{
@@ -303,41 +300,4 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-@media (max-width: 1180px) {
-    .black_header{
-        height: 120px;
-    }
-
-
-    .black_header h1{
-        width: 50%;
-    }
-
-    .step_marker_and_buttons{
-        display: flex;
-    }
-
-    .theory_eom{
-        height: 400px;
-    }
-    .content{
-        margin-right: 0;
-    }
-    .popup_text img{
-
-        height: 100%;
-    }
-    .popup_body{
-        height: 50vh;
-    }
-    .popup_content {
-        height: 50vh;
-    }
-    .popup_text{
-        display: flex;
-        align-items: center;
-        height: 500px;
-    }
 }
