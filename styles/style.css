@@ -10,9 +10,6 @@
    
 body{
     background: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -213,7 +210,7 @@ a{
 .main_content_name{
     margin-top: 25px;
     margin-left: 150px;
-    font-size: calc(4vw);
+    font-size: calc(3vw);
     font-weight: 900;
 }
 
@@ -487,7 +484,7 @@ a{
 .popup_content {
     background-color: white;
     color: black;
-    max-width: 700px;
+    max-width: 1000px;
     border-radius: 15px;
     padding: 25px;
 }
@@ -557,4 +554,3 @@ a{
 	background-image: rgba(0, 0, 0, .2);
     width: 15px;
 }
-
